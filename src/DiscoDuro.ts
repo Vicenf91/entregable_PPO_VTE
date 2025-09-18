@@ -5,7 +5,7 @@ class DiscoDuro extends Disco implements AlmacenarDatos{
     #tipoConexion: string;
     #formateado: boolean;
 
-    constructor(nombre:string, contenido: string, capacidad:number, tipo: string, rpm: number,tipoConexion; String, formateado: boolean){
+    constructor(nombre:string, contenido: string, capacidad:number, tipo: string, rpm: number,tipoConexion: string, formateado: boolean){
             super(nombre, contenido, capacidad, tipo, rpm);
             this.#tipoConexion = tipoConexion;
             this.#formateado = formateado;
@@ -14,15 +14,15 @@ class DiscoDuro extends Disco implements AlmacenarDatos{
     getTipoConexion() {return this.#tipoConexion;}
     setTipoConexion(nuevoTipoConexion:string) {this.#tipoConexion = nuevoTipoConexion}
     
-    getformateado(){ return this.#formateado;}
+    getFormateado(){ return this.#formateado;}
     setFormateado(estaFormateado: boolean) { this.#formateado = estaFormateado;}
 
     leerDatos(): void {
-        console.log("Disco duro escribiendo con cabezal magnetico:");
+        console.log("Disco duro leyendo con cabezal magnetico:");
     }
 
     escribirDatos(datos: string): void {
-        console.log(`Disco duro escribiendo con cabezal magnteico: ${datos}`)
+        console.log(`Disco duro escribiendo con cabezal magnetico: ${datos}`)
         this.setContenido(datos);
     }
 
