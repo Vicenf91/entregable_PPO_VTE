@@ -1,4 +1,4 @@
-import { Cd } from "./Cd.js";
+import { Cd } from "./CD.js";
 import { DiscoDuro } from "./DiscoDuro.js";
 
 const cd = new Cd ("Julio Iglesias", "Grabado", 700, "CD_R", 400, false);
