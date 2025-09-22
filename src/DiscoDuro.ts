@@ -1,7 +1,7 @@
 import { AlmacenarDatos } from "./AlmacenarDatos.js";
 import { Disco } from "./Disco.js";
 
-class DiscoDuro extends Disco implements AlmacenarDatos{
+export class DiscoDuro extends Disco implements AlmacenarDatos{
     #tipoConexion: string;
     #formateado: boolean;
 

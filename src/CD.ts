@@ -1,7 +1,7 @@
 import { AlmacenarDatos } from "./AlmacenarDatos.js";
 import { Disco } from "./Disco.js";
 
-class  Cd extends Disco implements AlmacenarDatos {
+export class  Cd extends Disco implements AlmacenarDatos {
     #regrabable: boolean;
 
     constructor (nombre: string,contenido:string, capacidad: number, tipo: string, rpm: number, regrabable: boolean){

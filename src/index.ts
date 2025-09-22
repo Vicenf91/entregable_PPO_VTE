@@ -8,7 +8,7 @@ const hdd = new DiscoDuro ("DiscoDuroHdd","Con datos", 500_000, "HDD", 7200, "SA
 cd.girarDisco();
 cd.leerDatos();
 // cd.escribirDatos("Nuevos datos")
-cd.reportarInformacion();
+cd.consultarInformacion();
 cd.expulsar();
 
 
@@ -19,4 +19,4 @@ hdd.conectar();
 hdd.leerDatos();
 hdd.escribirDatos("Entregable Vicente");
 hdd.formatear();
-hdd.reportarInformacion();
+hdd.consultarInformacion();
