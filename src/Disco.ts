@@ -8,8 +8,15 @@ export class Disco {
     constructor(nombre: string, contenido: string, capacidad: number, tipo: string, rpm:number) {
         this.#nombre = nombre;
         this.#contenido = contenido;
+<<<<<<< HEAD
         this.#tipo = tipo;
         this.#rpm = rpm;
+=======
+        this.#capacidad = capacidad;
+        this.#tipo = tipo;
+        this.#rpm = rpm;
+        
+>>>>>>> develop
     }
 
     getNombre() {return this.#nombre}
